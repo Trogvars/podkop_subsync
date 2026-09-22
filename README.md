@@ -13,4 +13,5 @@ config sync 'main'
 And start daemon:
 
 /etc/init.d/podkop-sub-sync enable
+
 /etc/init.d/podkop-sub-sync start
