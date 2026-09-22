@@ -7,6 +7,7 @@ Then add sbuscription link to config:
 /etc/config/podkop-sub-sync
 
 config sync 'main'
+
         option url 'https://subscription.url/'
 
 And start daemon:
