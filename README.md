@@ -2,7 +2,7 @@ Simple one string install:
 
 sh <(wget -O - https://github.com/Trogvars/podkop_subsync/raw/refs/heads/main/install-podkop-sub-sync.sh)
 
-Then add sbuscription link to config:
+Then add subscription link to config (check section name for edit):
 
 /etc/config/podkop-sub-sync
 
