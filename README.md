@@ -1,3 +1,6 @@
+Made for OpenWRT  25.x line
+
+
 Simple one string install:
 
 sh <(wget -O - https://github.com/Trogvars/podkop_subsync/raw/refs/heads/main/install-podkop-sub-sync.sh)
