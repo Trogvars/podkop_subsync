@@ -181,6 +181,37 @@ chmod +x install-podkop-sub-sync.sh
     --exclude RU \
     --exclude UZ
 ```
+## Установка одной командой
+
+На OpenWrt BusyBox `ash` лучше использовать pipe, а не bash process substitution.
+
+Не рекомендуется:
+
+```sh
+sh <(wget -O - URL)
+```
+
+Рекомендуется:
+
+```sh
+wget -qO- https://raw.githubusercontent.com/Trogvars/podkop-sub-sync/main/install.sh \
+    | sh -s -- \
+        --url 'https://example.com/sub/xxxxx' \
+        --interval 86400 \
+        --exclude RU
+```
+
+Несколько стран:
+
+```sh
+wget -qO- https://raw.githubusercontent.com/Trogvars/podkop-sub-sync/main/install.sh \
+    | sh -s -- \
+        --url 'https://example.com/sub/xxxxx' \
+        --interval 86400 \
+        --exclude RU \
+        --exclude UZ
+```
+
 
 ## Конфигурация
 
